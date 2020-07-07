@@ -5,4 +5,7 @@ def miinus(a, b):
     return a-b
 
 def tulo(a, b):
-    return int(a*b)
+    return float(a*b)
+
+def jakolasku(a, b):
+    return a / b

@@ -10,6 +10,10 @@ class MyTestCase(unittest.TestCase):
         result = laskin.tulo(6, 0)
         self.assertEqual(result, 0)
 
+    def test_desimaaleilla(self):
+        result = laskin.tulo(2.5, 4)
+        self.assertEqual(result, 10)
+
     def test_onko_numero_vai_ei(self):
         with self.assertRaises(ValueError):
             laskin.tulo(5, "d")
