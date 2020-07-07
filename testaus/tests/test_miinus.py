@@ -18,5 +18,6 @@ class MyTestCase(unittest.TestCase):
         with self.assertRaises(TypeError):
             laskin.miinus(5, "c")
 
+
 if __name__ == '__main__':
     unittest.main()
