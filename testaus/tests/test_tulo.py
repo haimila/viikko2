@@ -6,6 +6,13 @@ class MyTestCase(unittest.TestCase):
         result = laskin.tulo(6, 4)
         self.assertEqual(result, 24)
 
+    def test_nollatulo(self):
+        result = laskin.tulo(6, 0)
+        self.assertEqual(result, 0)
+
+    def test_onko_numero_vai_ei(self):
+        with self.assertRaises(ValueError):
+            laskin.tulo(5, "d")
 
 if __name__ == '__main__':
     unittest.main()

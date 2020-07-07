@@ -5,4 +5,4 @@ def miinus(a, b):
     return a-b
 
 def tulo(a, b):
-    return a*b
+    return int(a*b)

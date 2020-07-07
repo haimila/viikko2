@@ -8,9 +8,9 @@ class TestCalculator(unittest.TestCase):
         result = laskin.plus(num1, num2)
         self.assertEqual(result, 5)
 
-    def test_numero(self):
-        if laskin.plus(self, self) != float or laskin.plus(self, self) != int:
-            self.assertFalse()
+    def test_onko_numero(self):
+        with self.assertRaises(TypeError):
+            laskin.plus(1, "a")
 
 if __name__ == '__main__':
     unittest.main()
